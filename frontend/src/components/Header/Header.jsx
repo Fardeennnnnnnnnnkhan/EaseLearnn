@@ -57,7 +57,7 @@ function Header({ isAuth }) {
 
   return (
     <>
-      <header className={`fixed top-0 sm:top-4 left-0 sm:left-1/2 sm:-translate-x-1/2 z-50 w-full sm:w-[95%] max-w-7xl transition-all duration-500 sm:rounded-2xl ${scrolled ? 'bg-background/70 backdrop-blur-2xl border border-border/50 shadow-lg py-3' : 'bg-background/30 backdrop-blur-md border border-border/30 py-4 sm:py-5'} ${isOpen ? '!bg-background/90 sm:!bg-background/70 !backdrop-blur-3xl' : ''}`}>
+      <header className={`fixed top-0 sm:top-4 left-0 sm:left-1/2 sm:-translate-x-1/2 z-50 w-full sm:w-[95%] max-w-7xl transition-all duration-500 sm:rounded-2xl ${scrolled ? 'bg-transparent backdrop-blur-xl border border-border/20 shadow-lg py-3' : 'bg-transparent backdrop-blur-sm border border-border/10 py-4 sm:py-5'} ${isOpen ? '!bg-transparent !backdrop-blur-2xl' : ''}`}>
         <div className="container mx-auto flex items-center justify-between px-6 md:px-8 relative z-50">
           
           {/* Logo */}

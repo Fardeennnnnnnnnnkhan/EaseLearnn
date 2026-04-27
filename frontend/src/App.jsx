@@ -24,6 +24,11 @@ function AppRoutes() {
   const { isAuth, user, loading } = UserData();
   const location = useLocation(); // Get the current location
 
+  // Scroll to top on route change
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   // Define the paths where the Header and Footer should not be displayed
   const noHeaderFooterPaths = ['/login', '/register', '/verify'];
   // Check if the current path is in the array
